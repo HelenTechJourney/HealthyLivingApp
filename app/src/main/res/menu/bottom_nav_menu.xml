@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_jelajahi"
+        android:icon="@drawable/ic_jelajahi_24"
+        android:title="@string/title_jelajahi" />
+
+    <item
+        android:id="@+id/navigation_resep"
+        android:icon="@drawable/ic_resep_24"
+        android:title="@string/title_resep" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile_black_24dp"
+        android:title="@string/title_profile" />
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/form1Fragment">
+
+    <fragment
+        android:id="@+id/form1Fragment"
+        android:name="com.example.healthylivingapp.ui.fragment.Form1Fragment"
+        android:label="fragment_form1">
+        <action
+            android:id="@+id/action_form1_to_form2"
+            app:destination="@id/form2Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/form2Fragment"
+        android:name="com.example.healthylivingapp.ui.fragment.Form2Fragment"
+        android:label="fragment_register">
+        <action
+            android:id="@+id/action_form2Fragment_to_form1Fragment"
+            app:destination="@id/form1Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
